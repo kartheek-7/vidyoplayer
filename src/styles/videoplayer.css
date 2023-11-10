@@ -1,0 +1,88 @@
+/* Add styles for the outer container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+    /*max-width: 600px;*/
+    margin: 0 auto;
+  }
+  
+  .canvas-container {
+    position: relative; /* Add this property to allow positioning of child elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background-color: #ffffff;
+    border-radius: 0px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+    /*max-width: 600px;*/
+    margin: 0 auto;
+    cursor: pointer; /* Add cursor: pointer to make the container clickable */
+  }
+
+  .progressbar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure it's above the video */
+    padding: 10px; /* Adjust padding for size */
+    opacity: 0.5;
+  }
+  
+  /* Style the input for file upload */
+  input[type="file"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #3498db;
+    cursor: pointer;
+    left: 0%;
+  }
+  
+
+  
+  /* Style the Play/Pause button */
+  button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Add hover effect to the Play/Pause button */
+  button:hover {
+    background-color: #2184b6;
+  }
+  
+  .play-pause-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure it's above the video */
+    padding: 10px; /* Adjust padding for size */
+    opacity: 0.5;
+  }
+
+
+  .play-pause-icon:hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure it's above the video */
+    border-radius: 50%; /* Make it a circle */
+    padding: 10px; /* Adjust padding for size */
+    opacity: 0.77
+    
+  }
+  

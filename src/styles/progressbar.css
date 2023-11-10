@@ -1,0 +1,43 @@
+/* progressbar.css */
+
+.progress-bar-container {
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 6px;
+    border-radius: 4px;
+    padding-top: 1%;
+    position: relative;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #00000032; /* Change the color to your desired progress bar color */
+    border-radius: 1px;
+    position: relative;
+    transition: width 0.2s ease-in-out;
+  }
+  
+  .progress {
+    height: 100%;
+    border-radius: 1px;
+    background-color:  #3498db78;
+  }
+
+/* Define a class for a circle */
+.circle {
+    width: 12px; /* Set the width and height to your desired size */
+    height: 12px;
+    background-color: #3498db; /* Set the background color to your desired color */
+    border-radius: 50%; /* This makes the element a circle */
+    position: absolute; /* Position the circle absolutely within the progress bar */
+    top: -50%;
+    transform: translateX(-50%); /* Horizontally center the circle based on left position */
+  }
+
+  .play-pause-icon2{
+    position: relative;
+    left: 0;
+    top: 25%;
+  }
+  
+  
