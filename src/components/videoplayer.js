@@ -23,7 +23,6 @@ const VideoPlayer = () => {
     }
   };
 
-  // ... rest of your component
   const playVideo = () => {
     if (videoElement) {
       videoElement.play().catch((error) => {
@@ -38,7 +37,6 @@ const VideoPlayer = () => {
     }
   };
 
-  // Function to update the progress bar
   const updateProgressBar = () => {
     if (videoElement && videoElement.duration) {
       const currentTime = videoElement.currentTime;
@@ -48,7 +46,6 @@ const VideoPlayer = () => {
     }
   };
 
-  // Use an effect to continuously update the progress
   useEffect(() => {
     if (videoElement) {
       videoElement.addEventListener('timeupdate', updateProgressBar);
@@ -60,7 +57,6 @@ const VideoPlayer = () => {
     };
   }, [videoElement]);
 
-  // Use an effect to draw video frames on the canvas
   useEffect(() => {
     if (videoURL && isPlaying) {
       const canvas = canvasRef.current;

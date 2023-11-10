@@ -1,6 +1,6 @@
 import React from 'react';
 import { useVideoData } from './videocontext';
-import AudioExtractor from './audio'; // Import the AudioExtractor component
+import AudioExtractor from './audio';
 import Waveform from './waveform';
 
 const Uploader = () => {
@@ -22,7 +22,6 @@ const Uploader = () => {
     <div>
       <input type="file" onChange={handleFileUpload} accept="video/*" className="file-input" />
 {videoURL && (
-        // Pass videoURL to the AudioExtractor component
         //<AudioExtractor videoURL={videoURL} />
         <Waveform videoURL={videoURL}/>
 )}

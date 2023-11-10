@@ -34,7 +34,6 @@ const AudioExtractor = ({ videoURL }) => {
     }
 
     return () => {
-      // Clean up resources on component unmount
       if (audioContextRef.current) {
         audioContextRef.current.close();
       }
@@ -60,7 +59,6 @@ const AudioExtractor = ({ videoURL }) => {
   };
 
   const downloadAudio = () => {
-    // Trigger download by creating an anchor element
     const downloadLink = document.createElement('a');
     downloadLink.href = audioURL;
     downloadLink.download = 'audio.wav';

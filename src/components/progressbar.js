@@ -4,13 +4,13 @@ import { FaPause } from 'react-icons/fa';
 import { BsFillPauseFill } from 'react-icons/bs';
 import { MdPause } from 'react-icons/md';
 
-import '../styles/progressbar.css'; // Make sure to include your CSS file
+import '../styles/progressbar.css';
 
 const ProgressBar = (props) => {
   const { isPlaying, progress } = props;
 
   const circleStyle = {
-    left: `calc(${progress}%)`, // Adjust for the circle width
+    left: `calc(${progress}%)`,
   };
 
   return (

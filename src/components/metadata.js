@@ -1,8 +1,6 @@
-// Metadata.js
-
 import React, { useEffect, useState } from 'react';
 import { useVideoData } from './videocontext';
-import '../styles/metadata.css'; // Import your CSS file
+import '../styles/metadata.css';
 
 const Metadata = () => {
   const [videoURL, setVideoURL, videoName] = useVideoData();
@@ -28,7 +26,7 @@ const Metadata = () => {
         const formattedDuration = `${minutes}min ${seconds}sec`;
         setVideoDuration(formattedDuration);
 
-        const totalFrames = 60 * durationInSeconds; // Assuming 60 frames per second
+        const totalFrames = 60 * durationInSeconds;
         calculateFrameRate(durationInSeconds, totalFrames);
       };
     }

@@ -8,9 +8,7 @@ const Waveform = ({videoURL}) => {
 
   useEffect(() => {
     const initializeWaveform = async () => {
-      // Check if wavesurfer object is already created.
       if (!waveform.current) {
-        // Create a wavesurfer object
         waveform.current = Wavesurfer.create({
           container: "#waveform",
           waveColor: "#567FFF",
@@ -34,7 +32,6 @@ const Waveform = ({videoURL}) => {
 
     initializeWaveform();
 
-    // Play or pause the waveform based on the isPlaying state
     if (waveform.current) {
       if (isPlaying) {
         waveform.current.play();

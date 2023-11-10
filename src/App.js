@@ -3,7 +3,7 @@ import { VideoDataProvider } from "./components/videocontext";
 import Uploader from "./components/uploader";
 import Metadata from "./components/metadata";
 import Waveform from "./components/waveform";
-import "./App.css"; // Import your CSS file for styling
+import "./App.css"; 
 
 function App() {
   return (
