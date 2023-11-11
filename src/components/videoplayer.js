@@ -95,7 +95,7 @@ const VideoPlayer = () => {
               <FaPlay size={48} color='#8080ff' />
             </div>
           )}
-          {/*<ProgressBar progress={progress} isPlaying={isPlaying} className='progressbar' />*/}
+          <ProgressBar progress={progress} isPlaying={isPlaying} className='progressbar' />
           
         </div>
       )}
