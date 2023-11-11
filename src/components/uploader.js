@@ -1,10 +1,10 @@
+// Uploader.js
 import React from 'react';
 import { useVideoData } from './videocontext';
-import AudioExtractor from './audio';
 import Waveform from './waveform';
 
 const Uploader = () => {
-  const [videoURL, setVideoURL,videoName, setVideoName] = useVideoData();
+  const [videoURL, setVideoURL, videoName, setVideoName] = useVideoData();
 
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
@@ -21,10 +21,7 @@ const Uploader = () => {
   return (
     <div>
       <input type="file" onChange={handleFileUpload} accept="video/*" className="file-input" />
-{videoURL && (
-        //<AudioExtractor videoURL={videoURL} />
-        <Waveform videoURL={videoURL}/>
-)}
+      {videoURL && <Waveform videoURL={videoURL} />}
     </div>
   );
 };
