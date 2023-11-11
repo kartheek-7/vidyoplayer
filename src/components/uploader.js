@@ -2,6 +2,7 @@
 import React from 'react';
 import { useVideoData } from './videocontext';
 import Waveform from './waveform';
+import AudioChecker from './audiochecker';
 
 const Uploader = () => {
   const [videoURL, setVideoURL, videoName, setVideoName] = useVideoData();
@@ -22,6 +23,7 @@ const Uploader = () => {
     <div>
       <input type="file" onChange={handleFileUpload} accept="video/*" className="file-input" />
       {videoURL && <Waveform videoURL={videoURL} />}
+      {videoURL && <AudioChecker videoURL={videoURL} />}
     </div>
   );
 };
