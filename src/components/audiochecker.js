@@ -22,8 +22,7 @@ const AudioChecker = ({ videoURL }) => {
       if (
         (typeof video.mozHasAudio !== 'undefined' && video.mozHasAudio) ||
         (typeof video.webkitAudioDecodedByteCount !== 'undefined' &&
-          video.webkitAudioDecodedByteCount > 0) ||
-        Boolean(video.audioTracks?.length)
+          video.webkitAudioDecodedByteCount > 0)
       ) {
         console.log('This video has audio tracks.');
       } else {

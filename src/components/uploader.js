@@ -16,7 +16,10 @@ const Uploader = () => {
       const newVideoURL = URL.createObjectURL(file);
       setVideoURL(newVideoURL);
     };
-    reader.readAsArrayBuffer(file);
+    if(file){
+      reader.readAsArrayBuffer(file);
+    }
+    
   };
 
   return (
